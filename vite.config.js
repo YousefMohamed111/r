@@ -4,4 +4,8 @@ import react from '@vitejs/plugin-react'
 export default defineConfig({
   base: "/r/",
   plugins: [react()],
+  build: {
+    outDir: 'build',  // تغيير المجلد الافتراضي للإخراج إلى 'build'
+  },
 })
+
